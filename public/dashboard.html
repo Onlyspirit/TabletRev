@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DASHBOARD</title>
+</head>
+<style>
+  body,
+  html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(40, 40, 20);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .showw {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid black;
+  }
+
+  .textArea {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .later {
+    display: inline;
+  }
+
+  .dashboard {
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .note-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .note {
+    background-color: #212121;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    max-width: 100%;
+    word-wrap: break-word;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    height: fit-content;
+  }
+
+  .note:hover {
+    transform: scale(1.03);
+    background-color: #2e2e2e;
+  }
+
+  .textbox {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+    background-color: #212121;
+    color: white;
+    border: none;
+    height: 200px;
+    scrollbar-width: none;
+    scroll-behavior: auto;
+  }
+
+  .textbox0 {
+    scrollbar-width: none;
+    scroll-behavior: auto;
+    max-width: 250px;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #212121;
+    color: white;
+    border: none;
+  }
+
+  ::placeholder {
+    color: white;
+    font-weight: lighter;
+  }
+
+  .all {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    /* border: 2px solid red; */
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .note {
+    border: 1px solid #888;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .note:hover {
+    transform: scale(1.02);
+    background-color: #2c2c2c;
+  }
+</style>
+
+<body>
+  <div class="showw" style="display: none;" id="show">
+    <div>
+      <input type="search">
+    </div>
+  </div>
+  <div class="all">
+
+    <div id="show0" style="display: none;"></div>
+    <div class="textArea">
+      <h4>Enter Input here</h4>
+      <textarea placeholder="input your title here" id="inputTitle" class="textbox0"></textarea>
+      <textarea placeholder="type your notes in here....." id="inputNote" class="textbox"></textarea>
+
+      <div class="later">
+        <input type="file" name="" id="myFile">
+        <button onclick="submit()" id="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="note0">
+    <div class="dashboard">
+
+      <div class="note-container" id="output">
+      </div>
+    </div>
+  </div>
+  <button onclick="hi()">date</button>
+</body>
+<script type="module" src="dashboard.js"></script>
+</html>

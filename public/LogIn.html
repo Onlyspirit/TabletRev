@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabRev||LogIn</title>
+</head>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(150, 150, 150);
+    background-color: rgb(150, 150, 150);
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(back.jpg);
+  }
+
+  .parent {
+    position: absolute;
+    left: 40%;
+    display: grid;
+    place-items: center;
+    border: 2px solid darkmagenta;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    top: 25%;
+    background-color: whitesmoke;
+  }
+
+  input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    background-color: rgb(150, 150, 150, 0.2);
+    margin-bottom: 10px;
+  }
+
+  .formm {
+    display: block;
+  }
+
+  button {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: goldenrod;
+  }
+
+  .button {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .show {
+    color: red;
+    font-size: 30px;
+    font-weight: 500px;
+    display: flex;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div id="show" class="show">
+
+  </div>
+  <div class="parent">
+    <div class="formm">
+      <h3>SignIn</h3>
+      <input type="email" placeholder="input your email here" id="logEmail"><br>
+      <input type="password" id="logPassword" placeholder="enter desired password"><br>
+      <div class="button">
+        <button onclick="clicks()">Sign me in!</button><br>
+        <br>
+        <button onclick="signIn()">
+          Sign in?
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="login.js"></script>
+
+</html>
